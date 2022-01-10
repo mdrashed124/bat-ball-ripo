@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .field{
+            border: 1px solid;
+        }
+
+        .field:hover .bat{
+            transform: rotate(-50deg);
+            transform-origin: top right;
+        }
+        .ball{
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            border-radius: 25px;
+            position: relative;
+            left: 570px;
+            transition: transform 2s ease-in-out 3s;
+        }
+        .ball{
+            transition: transform 0.2s ease-in;
+        }
+        .field:hover .ball{
+            transform: translate(2000px, -150px);
+        }
+        .center{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="center">Criket Game Animation</h1>
+    <div class="field">
+        <img class="bat" src="batt.png" alt="">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>
